@@ -30,15 +30,27 @@
     </nav>
 
     <div class="container">
+
+
         <div class="card quiz-card">
             <img src="/img/pencil.jpg" class="card-img-top" id="header-image">
 
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%;">25%</div>
+            </div>
 
             <div class="card-body" id="end-screen" style="display: none;">
                 <div class="text-center">Quiz beendet!</div>
                 <div class="text-center">du hast <b id="right-answers"></b> Fragen von <b id="questions"></b> richtig
                     beantwortet.</div>
+
+                    <div class="button-row">
+                        <button onclick="restartGame()" class="btn btn-primary">Erneut spielen</button>
+                    </div>
+
             </div>
+
+
 
             <div class="card-body" id="question-body">
                 <h5 class="card-title" id="questiontext">Frage</h5>
